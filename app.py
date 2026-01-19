@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from PIL import Image, ImageDraw, ImageFont
 import requests
 import os
 import uuid
 
 app = Flask(__name__)
+CORS(app)
 
 TELEGRAM_TOKEN = "PASTE_NEW_TOKEN_HERE"
 CHAT_ID = "6392736953"
