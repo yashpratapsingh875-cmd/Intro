@@ -13,7 +13,9 @@ CHAT_ID = "6392736953"
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
+@app.route("/")
+def home():
+    return "Backend is running OK"
 @app.route("/generate", methods=["POST"])
 def generate():
     name = request.form.get("name")
