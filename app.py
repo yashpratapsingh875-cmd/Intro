@@ -8,7 +8,7 @@ import uuid
 app = Flask(__name__)
 CORS(app)
 
-TELEGRAM_TOKEN = "PASTE_NEW_TOKEN_HERE"
+TELEGRAM_TOKEN = "8172784911:AAEXtRKDAljhBkuXT9HOtL5yhGxjfRiwWTM"
 CHAT_ID = "6392736953"
 
 UPLOAD_FOLDER = "uploads"
